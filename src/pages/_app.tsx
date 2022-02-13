@@ -9,8 +9,8 @@ function App({ Component, pageProps }: AppProps) {
   return (
     <ThemeProvider theme={theme}>
       <Head>
-        <title>Next - Boilerplate</title>
-        <meta name="description" content="A Boilerplate created with Next" />
+        <title>Next - My Drugs</title>
+        <meta name="description" content="My Drugs" />
         <meta name="#000000" />
         <link rel="manifest" href="/manifest.json" />
       </Head>

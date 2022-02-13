@@ -1,6 +1,6 @@
 {
-  "name": "Next - Boilerplate",
-  "short_name": "Boilerplate",
+  "name": "My Drugs",
+  "short_name": "My Drugs",
   "icons": [
     {
       "src": "favicon.ico",
@@ -14,7 +14,7 @@
     }
   ],
   "background_color": "#000000",
-  "description": "Boilerlate utilizando Typescript, React, NextJS e Styled Components!",
+  "description": "My Drugs",
   "display": "fullscreen",
   "start_url": "/",
   "theme_color": "#000000"
