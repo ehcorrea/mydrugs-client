@@ -1739,7 +1739,6 @@
   resolved "https://registry.yarnpkg.com/@next/env/-/env-12.0.10.tgz#561640fd62279218ccd2798ae907bae8d94a7730"
   integrity sha512-mQVj0K6wQ5WEk/sL9SZ+mJXJUaG7el8CpZ6io1uFe9GgNTSC7EgUyNGqM6IQovIFc5ukF4O/hqsdh3S/DCgT2g==
 
-
 "@next/eslint-plugin-next@12.0.10":
   version "12.0.10"
   resolved "https://registry.yarnpkg.com/@next/eslint-plugin-next/-/eslint-plugin-next-12.0.10.tgz#521ab5d05a89e818528668df8a3edb8f9df2c547"
@@ -2991,10 +2990,10 @@
     "@types/node" "*"
     form-data "^3.0.0"
 
-"@types/node@*", "@types/node@^17.0.13":
-  version "17.0.14"
-  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.14.tgz#33b9b94f789a8fedd30a68efdbca4dbb06b61f20"
-  integrity sha512-SbjLmERksKOGzWzPNuW7fJM7fk3YXVTFiZWB/Hs99gwhk+/dnrQRPBQjPW9aO+fi1tAffi9PrwFvsmOKmDTyng==
+"@types/node@*", "@types/node@^17.0.17":
+  version "17.0.17"
+  resolved "https://registry.yarnpkg.com/@types/node/-/node-17.0.17.tgz#a8ddf6e0c2341718d74ee3dc413a13a042c45a0c"
+  integrity sha512-e8PUNQy1HgJGV3iU/Bp2+D/DXh3PYeyli8LgIwsQcs1Ar1LoaWHSIT6Rw+H2rNJmiq6SNWiDytfx8+gYj7wDHw==
 
 "@types/node@^14.0.10":
   version "14.18.10"
@@ -5848,7 +5847,6 @@ escodegen@^2.0.0:
     optionator "^0.8.1"
   optionalDependencies:
     source-map "~0.6.1"
-
 
 eslint-config-next@12.0.10:
   version "12.0.10"
