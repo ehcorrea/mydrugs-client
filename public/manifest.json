@@ -1,0 +1,21 @@
+{
+  "name": "Next - Boilerplate",
+  "short_name": "Boilerplate",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "type": "image/ico",
+      "sizes": "192x192"
+    },
+    {
+      "src": "favicon.ico",
+      "type": "image/ico",
+      "sizes": "192x192"
+    }
+  ],
+  "background_color": "#000000",
+  "description": "Boilerlate utilizando Typescript, React, NextJS e Styled Components!",
+  "display": "fullscreen",
+  "start_url": "/",
+  "theme_color": "#000000"
+}
