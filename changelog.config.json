@@ -10,7 +10,8 @@
     "refactor",
     "style",
     "ci",
-    "perf"
+    "perf",
+    "story"
   ],
   "maxMessageLength": 64,
   "minMessageLength": 3,
@@ -74,6 +75,11 @@
       "description": "Adding missing tests",
       "emoji": "💍",
       "value": "test"
+    },
+    "story": {
+      "description": "Adding missing stories",
+      "emoji": "📖",
+      "value": "story"
     }
   }
 }
