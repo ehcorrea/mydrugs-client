@@ -8,12 +8,21 @@ export default {
   argTypes: {
     children: {
       type: 'string',
+      defaultValue: 'Most Populars',
+    },
+    color: {
+      control: {
+        type: 'select',
+      },
+      defaultValue: 'black',
+    },
+    lineAdornment: {
+      name: 'line adorment',
+      control: {
+        type: 'select',
+      },
     },
   },
 } as Meta;
 
 export const Default: Story<HeadingProps> = (args) => <Heading {...args} />;
-
-Default.args = {
-  children: 'Most Populars',
-};

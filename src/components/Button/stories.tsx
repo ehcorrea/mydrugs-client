@@ -8,31 +8,33 @@ export default {
   component: Button,
   argTypes: {
     children: {
+      name: 'content',
       type: 'string',
+      defaultValue: 'Buy now',
     },
     size: {
-      control: { type: 'select' },
+      control: {
+        type: 'select',
+      },
+      defaultValue: 'small',
     },
     fullWidth: {
       name: 'full width',
-      type: 'boolean',
+      control: {
+        type: 'boolean',
+      },
     },
     icon: {
       type: 'function',
     },
+    onClick: { name: 'click' },
   },
 } as Meta;
 
 export const Default: Story = (args) => <Button {...args} />;
 
-Default.args = {
-  children: 'Buy now',
-};
-
 export const WithIcon: Story = (args) => <Button {...args} />;
 
 WithIcon.args = {
-  size: 'small',
-  children: 'Buy now',
   icon: <AddShoppingCart />,
 };
