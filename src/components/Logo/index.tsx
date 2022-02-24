@@ -6,12 +6,7 @@ const Logo = ({
   size = 'normal',
   hideOnMobile,
 }: LogoProps) => (
-  <S.Wrapper
-    data-testid="logo"
-    color={color}
-    size={size}
-    hideOnMobile={hideOnMobile}
-  >
+  <S.Wrapper color={color} size={size} hideOnMobile={hideOnMobile}>
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 300 150"
