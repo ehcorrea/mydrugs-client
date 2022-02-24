@@ -22,14 +22,14 @@ describe('<Logo />', () => {
   it('should render a normal logo when size is default', () => {
     renderWithTheme(<Logo color="black" />);
     expect(screen.getByLabelText(/My Drugs/i).parentElement).toHaveStyle({
-      width: '11rem',
+      width: '8rem',
     });
   });
 
   it('should render a big logo', () => {
     renderWithTheme(<Logo size="large" />);
     expect(screen.getByLabelText(/My Drugs/i).parentElement).toHaveStyle({
-      width: '20rem',
+      width: '11rem',
     });
   });
 

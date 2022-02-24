@@ -5,12 +5,12 @@ import { LogoProps } from './types';
 
 const wrapperModifiers = {
   normal: () => css`
-    width: 11rem;
+    width: 8rem;
     height: 3.3rem;
   `,
 
   large: () => css`
-    width: 20rem;
+    width: 11rem;
     height: 5.9rem;
   `,
 
