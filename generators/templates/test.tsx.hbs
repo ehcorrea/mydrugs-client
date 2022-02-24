@@ -7,7 +7,7 @@ describe('<{{pascalCase name}} />', () => {
     render(<{{pascalCase name}} />);
 
     expect(
-      screen.getByTestId('{{lowerCase name}}')
+      screen.getByText(/{{lowerCase name}}/i)
     ).toBeInTheDocument();
   });
 });
