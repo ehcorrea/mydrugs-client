@@ -14,15 +14,36 @@ export default {
       control: {
         type: 'select',
       },
-      defaultValue: 'black',
+      defaultValue: 'white',
     },
     lineAdornment: {
       name: 'line adorment',
       control: {
         type: 'select',
       },
+      defaultValue: '',
+    },
+    lineColor: {
+      name: 'line color',
+      control: {
+        type: 'select',
+      },
+      defaultValue: 'primary',
+    },
+    size: {
+      name: 'size',
+      control: {
+        type: 'select',
+      },
+      defaultValue: 'medium',
     },
   },
 } as Meta;
 
 export const Default: Story<HeadingProps> = (args) => <Heading {...args} />;
+
+Default.parameters = {
+  backgrounds: {
+    default: 'dark',
+  },
+};
