@@ -28,4 +28,27 @@ describe('<Banner />', () => {
       '/banner-image'
     );
   });
+
+  it('should render a Ribbon', () => {
+    renderWithTheme(
+      <Banner
+        {...BANNER_PROPS}
+        ribbon={{
+          children: 'My Ribbon',
+          backgroundColor: 'secondary',
+          size: 'small',
+        }}
+      />
+    );
+
+    const ribbon = screen.getByText(/My Ribbon/i);
+
+    expect(ribbon).toBeInTheDocument();
+    expect(ribbon).toHaveStyle({
+      height: '2.6rem',
+      fontSize: '1.2rem',
+      backgroundColor: '#3CD3C1',
+      color: '#FAFAFA',
+    });
+  });
 });
