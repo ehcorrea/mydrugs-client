@@ -1,6 +1,7 @@
 import styled, { css, DefaultTheme } from 'styled-components';
 import media from 'styled-media-query';
-import { HeadingProps, Colors } from './types';
+import { Colors } from 'types/colors';
+import { HeadingProps } from './types';
 
 const wrapperModifiers = {
   lineAdornment: {

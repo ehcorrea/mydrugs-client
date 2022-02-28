@@ -1,7 +1,5 @@
 import React from 'react';
-import { Theme } from 'types/style-components';
-
-export type Colors = keyof Theme['colors'];
+import { Colors } from 'types/colors';
 
 export type HeadingProps = {
   children: React.ReactNode;
