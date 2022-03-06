@@ -34,7 +34,7 @@ const BANNER_SLIDER_ITEMS: BannerProps[] = [
 export default {
   title: 'BannerSlider',
   component: BannerSlider,
-  args: { BANNER_SLIDER_ITEMS },
+  args: { items: BANNER_SLIDER_ITEMS },
   parameters: {
     layout: 'fullscreen',
     backgrounds: {
