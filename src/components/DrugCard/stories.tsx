@@ -1,10 +1,10 @@
 import { Story, Meta } from '@storybook/react';
-import GameCard from '.';
-import { GameCardProps } from './types';
+import DrugCard from '.';
+import { DrugCardProps } from './types';
 
 export default {
-  title: 'GameCard',
-  component: GameCard,
+  title: 'DrugCard',
+  component: DrugCard,
   args: {
     img: '/img/blue-punisher.jpg',
     price: 'R$ 30,00',
@@ -36,15 +36,15 @@ export default {
   },
 } as Meta;
 
-export const Default: Story<GameCardProps> = (args) => (
+export const Default: Story<DrugCardProps> = (args) => (
   <div style={{ width: '30rem' }}>
-    <GameCard {...args} />
+    <DrugCard {...args} />
   </div>
 );
 
-export const WithRibbon: Story<GameCardProps> = (args) => (
+export const WithRibbon: Story<DrugCardProps> = (args) => (
   <div style={{ width: '30rem' }}>
-    <GameCard {...args} />
+    <DrugCard {...args} />
   </div>
 );
 

@@ -7,11 +7,11 @@ import {
 import Button from 'components/Button';
 
 import * as S from './styles';
-import { GameCardProps } from './types';
+import { DrugCardProps } from './types';
 import { useMemo } from 'react';
 import Ribbon from 'components/Ribbon';
 
-const GameCard = ({
+const DrugCard = ({
   title,
   sourceData,
   img,
@@ -20,7 +20,7 @@ const GameCard = ({
   favorite,
   onFav,
   ribbon,
-}: GameCardProps) => {
+}: DrugCardProps) => {
   const renderRibbon = useMemo(
     () => !!ribbon && <Ribbon {...ribbon}> {ribbon.content}</Ribbon>,
     [ribbon]
@@ -69,4 +69,4 @@ const GameCard = ({
   );
 };
 
-export default GameCard;
+export default DrugCard;

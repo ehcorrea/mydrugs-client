@@ -4,11 +4,11 @@ export type PriceProps = {
   isPromotional?: boolean;
 };
 
-export type GameCardRibbonProps = Omit<RibbonProps, 'children'> & {
+export type DrugCardRibbonProps = Omit<RibbonProps, 'children'> & {
   content: string;
 };
 
-export type GameCardProps = {
+export type DrugCardProps = {
   img: string;
   price: string;
   promotionalPrice?: string;
@@ -16,5 +16,5 @@ export type GameCardProps = {
   title: string;
   favorite?: boolean;
   onFav?: () => void;
-  ribbon?: GameCardRibbonProps;
+  ribbon?: DrugCardRibbonProps;
 };
