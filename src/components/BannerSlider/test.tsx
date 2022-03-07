@@ -31,16 +31,16 @@ describe('<BannerSlider />', () => {
     const { container } = renderWithTheme(
       <BannerSlider items={BANNER_SLIDER_ITEMS} />
     );
-    expect(container.querySelectorAll('.slick-dots li')).toHaveLength(
-      BANNER_SLIDER_ITEMS.length
-    );
+    expect(container.querySelector('.slick-vertical')).toBeInTheDocument();
   });
 
   it('should render the dots', () => {
     const { container } = renderWithTheme(
       <BannerSlider items={BANNER_SLIDER_ITEMS} />
     );
-    expect(container.querySelector('.slick-vertical')).toBeInTheDocument();
+    expect(container.querySelectorAll('.slick-dots li')).toHaveLength(
+      BANNER_SLIDER_ITEMS.length
+    );
   });
 
   it('should render with one active item', () => {
