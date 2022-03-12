@@ -2,26 +2,26 @@ import { BannerProps } from 'components/Banner/types';
 
 const BANNER_SLIDER_MOCK: BannerProps[] = [
   {
-    img: 'https://picsum.photos/1042/580',
-    title: 'LSD / MDMA / ECSTASY',
-    subtitle: '<p>All drugs <strong>avaible</strong> now',
-    buttonLabel: 'Buy now',
-    buttonLink: '/drugs/drug_slug',
+    img: '/img/banner-1.jpg',
+    title: 'A project inspired by',
+    subtitle: '<p> How to Sell Drugs Online<strong>(fast)</strong> </p>',
+    buttonLabel: 'See now',
+    buttonLink: 'https://www.netflix.com/watch/80218448?source=35',
     ribbon: {
-      children: 'Bestselling',
+      children: 'Inspiration',
     },
   },
   {
-    img: 'https://picsum.photos/1042/580',
+    img: '/img/banner-2.jpg',
     title: 'LSD / MDMA / ECSTASY',
-    subtitle: '<p>All drugs <strong>avaible</strong> now',
+    subtitle: '<p>The best <strong>variety</strong> of drugs</p>',
     buttonLabel: 'Buy now',
     buttonLink: '/drugs/drug_slug',
   },
   {
-    img: 'https://picsum.photos/1042/580',
-    title: 'LSD / MDMA / ECSTASY',
-    subtitle: '<p>All drugs <strong>avaible</strong> now',
+    img: '/img/banner-3.jpg',
+    title: 'Drugs with purity',
+    subtitle: '<p>The best <strong>chemical solutions</strong> on the market',
     buttonLabel: 'Buy now',
     buttonLink: '/drugs/drug_slug',
   },
