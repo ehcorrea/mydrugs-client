@@ -37,7 +37,7 @@ describe('<Home />', () => {
     //render banner
     expect(
       screen.getByRole('heading', {
-        name: 'LSD / MDMA / ECSTASY',
+        name: 'A project inspired by',
       })
     ).toBeInTheDocument();
 
@@ -52,6 +52,6 @@ describe('<Home />', () => {
 
     //render section elements
     expect(screen.getAllByText(/blue punisher/i)).toHaveLength(4);
-    expect(screen.getAllByText(/mdma for good party/i)).toHaveLength(2);
+    expect(screen.getAllByText(/your trippy/i)).toHaveLength(2);
   });
 });
