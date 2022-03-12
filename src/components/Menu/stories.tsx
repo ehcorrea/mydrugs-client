@@ -19,6 +19,6 @@ export const Default: Story<MenuProps> = (args) => <Menu {...args} />;
 Default.parameters = {
   layout: 'fullscreen',
   backgrounds: {
-    default: 'dark',
+    default: 'mydrugs-dark',
   },
 };

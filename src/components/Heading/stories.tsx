@@ -44,6 +44,6 @@ export const Default: Story<HeadingProps> = (args) => <Heading {...args} />;
 
 Default.parameters = {
   backgrounds: {
-    default: 'dark',
+    default: 'mydrugs-dark',
   },
 };
