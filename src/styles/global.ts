@@ -1,6 +1,13 @@
-import { createGlobalStyle, css } from 'styled-components';
+import { createGlobalStyle, css, DefaultTheme } from 'styled-components';
 
-const GlobalStyles = createGlobalStyle`
+type GlobalStylesProps = {
+  storybookBg?: boolean;
+};
+
+const GlobalStyles: GlobalStyleComponent<
+  GlobalStylesProps,
+  DefaultTheme
+> = createGlobalStyle`
 
   @font-face {
       font-family: 'Poppins';
@@ -42,7 +49,7 @@ const GlobalStyles = createGlobalStyle`
 
   }
 
-  ${({ theme }) => css`
+  ${({ theme, storybookBg }) => css`
     html {
       font-size: 62.5%;
     }
@@ -50,7 +57,11 @@ const GlobalStyles = createGlobalStyle`
     body {
       font-family: ${theme.font.family};
       font-size: ${theme.font.sizes.medium};
-      background-color: ${theme.colors.mainBg};
+
+      ${!storybookBg &&
+      css`
+        background-color: ${theme.colors.mainBg};
+      `}
     }
   `}
 `;

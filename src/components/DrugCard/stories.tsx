@@ -31,7 +31,7 @@ export default {
   },
   parameters: {
     backgrounds: {
-      default: 'dark',
+      default: 'mydrugs-dark',
     },
   },
 } as Meta;

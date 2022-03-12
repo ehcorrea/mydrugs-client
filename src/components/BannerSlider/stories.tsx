@@ -38,7 +38,7 @@ export default {
   parameters: {
     layout: 'fullscreen',
     backgrounds: {
-      default: 'dark',
+      default: 'mydrugs-dark',
     },
   },
 } as Meta;
