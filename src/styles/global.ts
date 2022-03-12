@@ -1,4 +1,9 @@
-import { createGlobalStyle, css, DefaultTheme } from 'styled-components';
+import {
+  createGlobalStyle,
+  css,
+  DefaultTheme,
+  GlobalStyleComponent,
+} from 'styled-components';
 
 type GlobalStylesProps = {
   storybookBg?: boolean;
