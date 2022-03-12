@@ -1,40 +1,13 @@
 import { Story, Meta } from '@storybook/react';
-import { BannerProps } from 'components/Banner/types';
 
 import BannerSlider from '.';
+import BANNER_SLIDER_MOCK from './mock';
 import { BannerSliderProps } from './types';
-
-const BANNER_SLIDER_ITEMS: BannerProps[] = [
-  {
-    img: 'https://picsum.photos/1042/580',
-    title: 'LSD / MDMA / ECSTASY',
-    subtitle: '<p>All drugs <strong>avaible</strong> now',
-    buttonLabel: 'Buy now',
-    buttonLink: '/drugs/drug_slug',
-    ribbon: {
-      children: 'Bestselling',
-    },
-  },
-  {
-    img: 'https://picsum.photos/1042/580',
-    title: 'LSD / MDMA / ECSTASY',
-    subtitle: '<p>All drugs <strong>avaible</strong> now',
-    buttonLabel: 'Buy now',
-    buttonLink: '/drugs/drug_slug',
-  },
-  {
-    img: 'https://picsum.photos/1042/580',
-    title: 'LSD / MDMA / ECSTASY',
-    subtitle: '<p>All drugs <strong>avaible</strong> now',
-    buttonLabel: 'Buy now',
-    buttonLink: '/drugs/drug_slug',
-  },
-];
 
 export default {
   title: 'BannerSlider',
   component: BannerSlider,
-  args: { items: BANNER_SLIDER_ITEMS },
+  args: { items: BANNER_SLIDER_MOCK },
   parameters: {
     layout: 'fullscreen',
     backgrounds: {
