@@ -1,19 +1,12 @@
 import { Story, Meta } from '@storybook/react';
 import Highlight from '.';
+import HIGHLIGHT_MOCK from './mock';
 import { HighlightProps } from './types';
 
 export default {
   title: 'Highlight',
   component: Highlight,
-  args: {
-    title: 'MDMA for good party',
-    subtitle: 'Come see MDMA trips',
-    backgroundImage: '/img/mdma-img.jpg',
-    button: {
-      label: 'Buy now',
-      link: '/mdma',
-    },
-  },
+  args: { ...HIGHLIGHT_MOCK },
   argTypes: {
     alignment: {
       control: {
