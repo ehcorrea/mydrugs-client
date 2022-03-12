@@ -8,7 +8,6 @@ const HIGHLIGHT_MOCK: HighlightProps = {
     label: 'Buy now',
     link: '/mdma',
   },
-  floatImage: '/img/trippy.png',
 };
 
 export default HIGHLIGHT_MOCK;
