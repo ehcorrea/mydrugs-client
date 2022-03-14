@@ -1,4 +1,5 @@
 import { Story, Meta } from '@storybook/react';
+import BANNER_SLIDER_MOCK from 'components/BannerSlider/mock';
 import Banner from '.';
 import { BannerProps } from './types';
 
@@ -6,11 +7,8 @@ export default {
   title: 'Banner',
   component: Banner,
   args: {
-    img: 'https://picsum.photos/1042/580',
-    title: 'LSD / MDMA / ECSTASY',
-    subtitle: '<p>All drugs <strong>avaible</strong> now',
-    buttonLabel: 'Buy now',
-    buttonLink: '/drugs/drug_slug',
+    ...BANNER_SLIDER_MOCK[0],
+    ribbon: null,
   },
   parameters: {
     layout: 'fullscrenn',
