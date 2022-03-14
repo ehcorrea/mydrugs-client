@@ -2,7 +2,7 @@ import React, { AnchorHTMLAttributes, ButtonHTMLAttributes } from 'react';
 
 export type WrapperProps = { hasIcon: boolean } & Pick<
   ButtonProps,
-  'size' | 'fullWidth'
+  'size' | 'fullWidth' | 'minimal'
 >;
 
 export type ButtonProps = {
@@ -10,6 +10,7 @@ export type ButtonProps = {
   fullWidth?: boolean;
   icon?: React.ReactNode;
   as?: React.ElementType;
+  minimal?: boolean;
 } & ButtonTypes;
 
 type ButtonTypes =
