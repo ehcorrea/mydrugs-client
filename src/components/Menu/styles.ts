@@ -56,7 +56,7 @@ export const MenuFull = styled.nav<MenuFullProps>`
     position: fixed;
     right: 0;
     top: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity ${theme.transition.default};
     z-index: ${theme.layers.menu};
 
     > svg {
@@ -83,12 +83,12 @@ export const MenuFull = styled.nav<MenuFullProps>`
       font-weight: ${theme.font.bold};
       margin-bottom: ${theme.spacings.small};
       transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
-      transition: transform 0.3s ease-in-out;
+      transition: transform ${theme.transition.default};
     }
 
     ${RegisterBox} {
       transform: ${isOpen ? 'translateY(0)' : 'translateY(3rem)'};
-      transition: transform 0.3s ease-in-out;
+      transition: transform ${theme.transition.default};
     }
   `}
 `;
