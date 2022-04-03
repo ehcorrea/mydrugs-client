@@ -3,7 +3,7 @@ import Logo from '.';
 import { LogoProps } from './types';
 
 export default {
-  title: 'Logo',
+  title: 'STYLEGUIDE/Logo',
   component: Logo,
   argTypes: {
     color: {
@@ -23,6 +23,7 @@ export default {
       control: {
         type: 'boolean',
       },
+      defaultValue: false,
     },
   },
 } as Meta;

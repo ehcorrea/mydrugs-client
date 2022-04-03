@@ -5,7 +5,7 @@ import DrugCardSlider from '.';
 import DRUG_CARD_MOCK from './mock';
 
 export default {
-  title: 'DrugCardSlider',
+  title: 'SLIDER/Drug Card Slider',
   component: DrugCardSlider,
   args: { items: DRUG_CARD_MOCK, arrowColor: 'white' },
   parameters: {

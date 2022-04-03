@@ -3,7 +3,7 @@ import Heading from '.';
 import { HeadingProps } from './types';
 
 export default {
-  title: 'Heading',
+  title: 'STYLEGUIDE/Heading',
   component: Heading,
   argTypes: {
     children: {

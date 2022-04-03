@@ -3,7 +3,7 @@ import Menu from '.';
 import { MenuProps } from './types';
 
 export default {
-  title: 'Menu',
+  title: 'PAGE/Menu',
   component: Menu,
   argTypes: {
     userName: {

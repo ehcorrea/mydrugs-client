@@ -5,7 +5,7 @@ import BANNER_SLIDER_MOCK from './mock';
 import { BannerSliderProps } from './types';
 
 export default {
-  title: 'BannerSlider',
+  title: 'SLIDER/Banner Slider',
   component: BannerSlider,
   args: { items: BANNER_SLIDER_MOCK },
   parameters: {

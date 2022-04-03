@@ -4,7 +4,7 @@ import Banner from '.';
 import { BannerProps } from './types';
 
 export default {
-  title: 'Banner',
+  title: 'EXPOSITION/Banner',
   component: Banner,
   args: {
     ...BANNER_SLIDER_MOCK[0],

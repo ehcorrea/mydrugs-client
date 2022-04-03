@@ -3,7 +3,7 @@ import Ribbon from '.';
 import { RibbonProps } from './types';
 
 export default {
-  title: 'Ribbon',
+  title: 'STYLEGUIDE/Ribbon',
   component: Ribbon,
   args: {
     children: 'Best Seller',

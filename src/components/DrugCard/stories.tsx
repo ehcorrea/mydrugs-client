@@ -3,7 +3,7 @@ import DrugCard from '.';
 import { DrugCardProps } from './types';
 
 export default {
-  title: 'DrugCard',
+  title: 'EXPOSITION/Drug Card',
   component: DrugCard,
   args: {
     img: '/img/blue-punisher.jpg',

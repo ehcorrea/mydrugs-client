@@ -5,7 +5,7 @@ import { SliderProps, SliderSettings } from './types';
 import Slider from '.';
 
 export default {
-  title: 'Slider',
+  title: 'SLIDER/Slider',
   component: Slider,
 } as Meta;
 

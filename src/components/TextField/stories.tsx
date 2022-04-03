@@ -4,13 +4,15 @@ import TextField from '.';
 import { TextFieldProps } from './types';
 
 export default {
-  title: 'FORM/TextField',
+  title: 'FORM/Text Field',
   component: TextField,
   args: {
     labelOptions: { text: 'Email', labelFor: 'Email' },
     id: 'Email',
     initialValue: '',
     placeholder: 'email@gmail.com',
+    disabled: false,
+    error: '',
   },
   argTypes: {
     onInput: { action: 'changed' },
@@ -19,7 +21,7 @@ export default {
 
 export const Default: Story<TextFieldProps> = (args) => (
   <div style={{ maxWidth: 300, padding: 15 }}>
-    <TextField disabled {...args} />
+    <TextField {...args} />
   </div>
 );
 

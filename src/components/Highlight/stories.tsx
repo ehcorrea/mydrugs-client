@@ -4,7 +4,7 @@ import HIGHLIGHT_MOCK from './mock';
 import { HighlightProps } from './types';
 
 export default {
-  title: 'Highlight',
+  title: 'EXPOSITION/Highlight',
   component: Highlight,
   args: { ...HIGHLIGHT_MOCK },
   argTypes: {
