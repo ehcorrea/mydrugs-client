@@ -3,7 +3,7 @@ import Radio from '.';
 import { RadioProps } from './types';
 
 export default {
-  title: 'Radio',
+  title: 'FORM/Radio',
   component: Radio,
   parameters: {
     layout: 'fullscreen',

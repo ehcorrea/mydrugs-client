@@ -3,7 +3,7 @@ import Checkbox from '.';
 import { CheckboxProps } from './types';
 
 export default {
-  title: 'Checkbox',
+  title: 'FORM/Checkbox',
   component: Checkbox,
   argTypes: {
     labelOptions: {
