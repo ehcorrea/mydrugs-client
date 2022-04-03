@@ -1,5 +1,5 @@
 import { Story, Meta } from '@storybook/react';
-import { Iconfinder } from 'styled-icons/simple-icons';
+import { Email } from 'styled-icons/material-outlined';
 import TextField from '.';
 import { TextFieldProps } from './types';
 
@@ -30,7 +30,7 @@ export const WithIcon: Story<TextFieldProps> = (args) => (
 );
 
 WithIcon.args = {
-  iconOptions: { element: <Iconfinder /> },
+  iconOptions: { element: <Email /> },
 };
 
 export const WithError: Story<TextFieldProps> = (args) => (
@@ -40,5 +40,6 @@ export const WithError: Story<TextFieldProps> = (args) => (
 );
 
 WithError.args = {
+  iconOptions: { element: <Email /> },
   error: 'Ops...algo deu errado',
 };
