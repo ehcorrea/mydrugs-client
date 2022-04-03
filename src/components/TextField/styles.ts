@@ -18,6 +18,8 @@ const wrapperModifiers = {
   `,
 
   disabled: (theme: DefaultTheme) => css`
+    cursor: not-allowed;
+
     ${Label},
     ${Input},
     ${Icon} {
