@@ -9,6 +9,7 @@ import { useMemo, useState } from 'react';
 import Button from 'components/Button';
 import { MenuProps } from './types';
 import MediaMatch from 'components/MediaMatch';
+import Link from 'next/link';
 
 const Menu = ({ userName }: MenuProps) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,13 +31,13 @@ const Menu = ({ userName }: MenuProps) => {
     () =>
       !userName && (
         <S.RegisterBox>
-          <Button fullWidth size="large">
-            Log in now
-          </Button>
+          <Link href="/sign-in" passHref>
+            <Button as="a">Sing in</Button>
+          </Link>
           <span>or</span>
-          <S.CreateAccount href="#" title="sing in">
-            Sing up
-          </S.CreateAccount>
+          <Link href="/sign-up">
+            <S.CreateAccount title="sing in">Sing up</S.CreateAccount>
+          </Link>
         </S.RegisterBox>
       ),
     [userName]
@@ -46,7 +47,9 @@ const Menu = ({ userName }: MenuProps) => {
     () =>
       !userName && (
         <MediaMatch greaterThan="medium">
-          <Button>Sign in</Button>
+          <Link href="/sign-in" passHref>
+            <Button as="a">Sign in</Button>
+          </Link>
         </MediaMatch>
       ),
     [userName]
