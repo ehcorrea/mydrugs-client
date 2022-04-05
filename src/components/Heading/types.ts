@@ -5,6 +5,6 @@ export type HeadingProps = {
   children: React.ReactNode;
   color?: 'white' | 'black';
   lineAdornment?: 'left' | 'bottom';
-  size?: 'small' | 'medium';
+  size?: 'small' | 'medium' | 'huge';
   lineColor?: Colors;
 };
