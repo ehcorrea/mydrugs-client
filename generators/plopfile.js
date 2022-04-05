@@ -7,26 +7,32 @@ module.exports = (plop) => {
         name: 'name',
         message: 'What is your component name?',
       },
+      {
+        type: 'list',
+        name: 'folder',
+        message: 'Where is your component?',
+        choices: ['/components', '/templates'],
+      },
     ],
     actions: [
       {
         type: 'add',
-        path: '../src/components/{{pascalCase name}}/index.tsx',
+        path: '../src{{folder}}/{{pascalCase name}}/index.tsx',
         templateFile: 'templates/Component.tsx.hbs',
       },
       {
         type: 'add',
-        path: '../src/components/{{pascalCase name}}/styles.ts',
+        path: '../src{{folder}}/{{pascalCase name}}/styles.ts',
         templateFile: 'templates/styles.ts.hbs',
       },
       {
         type: 'add',
-        path: '../src/components/{{pascalCase name}}/stories.tsx',
+        path: '../src{{folder}}/{{pascalCase name}}/stories.tsx',
         templateFile: 'templates/stories.tsx.hbs',
       },
       {
         type: 'add',
-        path: '../src/components/{{pascalCase name}}/test.tsx',
+        path: '../src{{folder}}/{{pascalCase name}}/test.tsx',
         templateFile: 'templates/test.tsx.hbs',
       },
     ],
