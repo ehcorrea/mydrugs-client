@@ -17,7 +17,7 @@ export const Wrapper = styled.div`
 export const BannerBlock = styled.div`
   ${({ theme }) =>
     css`
-      background-image: url(https://static.vecteezy.com/system/resources/previews/004/216/553/large_2x/trippy-girl-sexy-lips-psychedelic-vector.jpg);
+      background-image: url('/img/auth-banner.jpg');
       background-position: center center;
       background-size: cover;
       padding: ${theme.spacings.xxlarge};
@@ -50,6 +50,11 @@ export const BannerContent = styled.div`
       justify-content: space-between;
       position: relative;
       z-index: ${theme.layers.base};
+
+      a {
+        width: fit-content;
+        height: fit-content;
+      }
     `}
 `;
 
