@@ -19,24 +19,6 @@ const HOME_PROPS_MOCK: HomeTemplateProps = {
   upcommingMoreDrugs: [DRUG_CARD_MOCK[0]],
 };
 
-jest.mock('components/Menu', () => {
-  return {
-    __esModule: true,
-    default: function Mock() {
-      return <div data-testid="Mock Menu"></div>;
-    },
-  };
-});
-
-jest.mock('components/Footer', () => {
-  return {
-    __esModule: true,
-    default: function Mock() {
-      return <div data-testid="Mock Footer"></div>;
-    },
-  };
-});
-
 jest.mock('components/Showcase', () => {
   return {
     __esModule: true,
@@ -56,11 +38,9 @@ jest.mock('components/BannerSlider', () => {
 });
 
 describe('<Home />', () => {
-  it('should render page and components', () => {
+  it('should render page and BannerSlider and Showcase', () => {
     renderWithTheme(<Home {...HOME_PROPS_MOCK} />);
 
-    expect(screen.getByTestId('Mock Menu')).toBeInTheDocument();
-    expect(screen.getByTestId('Mock Footer')).toBeInTheDocument();
     expect(screen.getByTestId('Mock BannerSlider')).toBeInTheDocument();
     expect(screen.getAllByTestId('Mock Showcase')).toHaveLength(4);
   });
