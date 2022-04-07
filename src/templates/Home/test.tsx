@@ -19,39 +19,49 @@ const HOME_PROPS_MOCK: HomeTemplateProps = {
   upcommingMoreDrugs: [DRUG_CARD_MOCK[0]],
 };
 
+jest.mock('components/Menu', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Menu"></div>;
+    },
+  };
+});
+
+jest.mock('components/Footer', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Footer"></div>;
+    },
+  };
+});
+
+jest.mock('components/Showcase', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock Showcase"></div>;
+    },
+  };
+});
+
+jest.mock('components/BannerSlider', () => {
+  return {
+    __esModule: true,
+    default: function Mock() {
+      return <div data-testid="Mock BannerSlider"></div>;
+    },
+  };
+});
+
 describe('<Home />', () => {
-  it('should render page integration', () => {
+  it('should render page and components', () => {
     renderWithTheme(<Home {...HOME_PROPS_MOCK} />);
 
-    //render menu
-    expect(screen.getByLabelText(/open menu/i)).toBeInTheDocument();
-
-    //render footer
-    expect(
-      screen.getByRole('heading', { name: /Contact/i })
-    ).toBeInTheDocument();
-
-    //render menu/footer
-    expect(screen.getAllByRole('img', { name: /my drugs/i })).toHaveLength(2);
-
-    //render banner
-    expect(
-      screen.getByRole('heading', {
-        name: 'A project inspired by',
-      })
-    ).toBeInTheDocument();
-
-    //render section
-    expect(screen.getByRole('heading', { name: /news/i })).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', { name: /most popular/i })
-    ).toBeInTheDocument();
-    expect(
-      screen.getByRole('heading', { name: /upcomming/i })
-    ).toBeInTheDocument();
-
-    //render section elements
-    expect(screen.getAllByText(/blue punisher/i)).toHaveLength(4);
-    expect(screen.getAllByText(/your trippy/i)).toHaveLength(2);
+    expect(screen.getByTestId('Mock Menu')).toBeInTheDocument();
+    expect(screen.getByTestId('Mock Footer')).toBeInTheDocument();
+    expect(screen.getByTestId('Mock BannerSlider')).toBeInTheDocument();
+    expect(screen.getAllByTestId('Mock Showcase')).toHaveLength(4);
   });
 });

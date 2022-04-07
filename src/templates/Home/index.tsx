@@ -1,10 +1,8 @@
 import BannerSlider from 'components/BannerSlider';
 import Container from 'components/Container';
-import DrugCardSlider from 'components/DrugCardSlider';
 import Footer from 'components/Footer';
-import Heading from 'components/Heading';
-import Highlight from 'components/Highlight';
 import Menu from 'components/Menu';
+import Showcase from 'components/Showcase';
 
 import * as S from './styles';
 import { HomeTemplateProps } from './types';
@@ -27,35 +25,21 @@ const Home = ({
     </Container>
 
     <S.SectionNews>
-      <Container>
-        <Heading lineAdornment="left" lineColor="secondary">
-          News
-        </Heading>
-
-        <DrugCardSlider items={newDrugs} />
-      </Container>
+      <Showcase title="News" drugs={newDrugs} />
     </S.SectionNews>
 
-    <Container>
-      <S.SectionMostPopular>
-        <Heading lineAdornment="left" lineColor="secondary">
-          Most Popular
-        </Heading>
+    <S.SectionMostPopular>
+      <Showcase
+        title="Most Popular"
+        drugs={mostPopularDrugs}
+        highlight={mostPopularHighlight}
+      />
+    </S.SectionMostPopular>
 
-        <Highlight {...mostPopularHighlight} />
-        <DrugCardSlider items={mostPopularDrugs} arrowColor="white" />
-      </S.SectionMostPopular>
-
-      <S.SectionUpcoming>
-        <Heading lineAdornment="left" lineColor="secondary">
-          Upcomming
-        </Heading>
-
-        <DrugCardSlider items={upcommingMoreDrugs} arrowColor="white" />
-        <Highlight {...upcommingHighlight} />
-        <DrugCardSlider items={upcommingDrugs} arrowColor="white" />
-      </S.SectionUpcoming>
-    </Container>
+    <S.SectionUpcoming>
+      <Showcase title="Upcomming" drugs={upcommingDrugs} />
+      <Showcase drugs={upcommingMoreDrugs} highlight={upcommingHighlight} />
+    </S.SectionUpcoming>
 
     <S.SectionFooter>
       <Container>
