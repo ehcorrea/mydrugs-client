@@ -1,3 +1,3 @@
 export type BaseProps = {
-  children: React.ReactElement;
+  children: React.ReactNode;
 };
