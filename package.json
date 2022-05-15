@@ -46,7 +46,7 @@
     "@types/styled-components": "^5.1.24",
     "@typescript-eslint/eslint-plugin": "^5.13.0",
     "@typescript-eslint/parser": "^5.17.0",
-    "babel-loader": "^8.2.3",
+    "babel-loader": "^8.2.5",
     "babel-plugin-styled-components": "^2.0.6",
     "commitizen": "^4.2.4",
     "eslint": "8.12.0",
